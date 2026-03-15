@@ -18,25 +18,25 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-brand-emerald/40 to-transparent z-[1]"></div>
         
         <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 text-white">
-          <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full glass border-white/20 mb-8 animate-fade-in">
-            <span className="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
-            <span className="text-xs font-bold tracking-[0.2em] uppercase text-white/90">The Nervous System Reset Method</span>
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass border-white/20 mb-6 animate-fade-in shadow-sm">
+            <span className="w-1.5 h-1.5 rounded-full bg-brand-gold animate-pulse"></span>
+            <span className="text-[10px] font-bold tracking-[0.25em] uppercase text-white/90">The Nervous System Reset Method</span>
           </div>
           
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold max-w-5xl tracking-tight leading-[1.1]">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold max-w-3xl tracking-tight leading-[1.15]">
             Reset Your Nervous System, <br />
             <span className="text-brand-gold italic font-normal">Reduce Pain & Sleep Better.</span>
           </h1>
           
-          <p className="mt-8 text-xl md:text-2xl max-w-2xl text-white/80 font-light leading-relaxed">
+          <p className="mt-5 text-base md:text-lg max-w-xl text-white/80 font-light leading-relaxed">
             Evidence-based yoga therapy, acupuncture & nervous system regulation with <span className="text-white font-medium">Isabel Gordon</span>.
           </p>
           
-          <div className="mt-12 flex flex-wrap gap-6">
-            <Link href="/book" className="bg-brand-gold hover:bg-white text-brand-emerald px-12 py-5 rounded-full text-sm font-bold tracking-widest uppercase transition-all duration-300 transform hover:-translate-y-1 shadow-2xl shadow-brand-gold/20">
+          <div className="mt-8 flex flex-wrap gap-4">
+            <Link href="/book" className="bg-brand-gold hover:bg-white text-brand-emerald px-8 py-3.5 rounded-full text-[10px] font-bold tracking-widest uppercase transition-all duration-300 transform hover:-translate-y-1 shadow-xl shadow-brand-gold/10">
               Start Your Journey
             </Link>
-            <Link href="/retreats" className="glass hover:bg-white/20 text-white px-12 py-5 rounded-full text-sm font-bold tracking-widest uppercase transition-all duration-300 shadow-xl">
+            <Link href="/retreats" className="glass hover:bg-white/20 text-white px-8 py-3.5 rounded-full text-[10px] font-bold tracking-widest uppercase transition-all duration-300">
               Explore Retreats
             </Link>
           </div>
