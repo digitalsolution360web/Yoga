@@ -57,22 +57,22 @@ export default function About() {
           <Image src="/retreat.png" alt="Yoga background" fill className="object-cover brightness-[0.35] scale-105" priority />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-brand-emerald/60 via-brand-emerald/30 to-brand-emerald/70 z-[1]"></div>
-        
+
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 relative z-10 w-full">
           <div className="max-w-4xl">
             <span className="text-brand-gold font-bold tracking-[0.4em] uppercase text-xs block mb-8">About Us</span>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white tracking-tight leading-none">
-              Our <br/><span className="text-brand-gold italic">Teachers</span>
+              Our <br /><span className="text-brand-gold italic">Teachers</span>
             </h1>
             <p className="mt-12 text-xl md:text-2xl text-white/80 leading-relaxed font-light italic border-l-2 border-brand-gold pl-8 max-w-2xl">
               &ldquo;I believe the ultimate yoga is practiced in every breathing moment.&rdquo;
             </p>
           </div>
         </div>
-        
+
         {/* Decorative bottom curve */}
         <div className="absolute bottom-0 left-0 right-0 z-10">
-          <svg viewBox="0 0 1440 80" fill="none" className="w-full"><path d="M0 80L1440 80L1440 40C1440 40 1200 0 720 0C240 0 0 40 0 40L0 80Z" fill="var(--background)"/></svg>
+          <svg viewBox="0 0 1440 80" fill="none" className="w-full"><path d="M0 80L1440 80L1440 40C1440 40 1200 0 720 0C240 0 0 40 0 40L0 80Z" fill="var(--background)" /></svg>
         </div>
       </section>
 
@@ -81,17 +81,17 @@ export default function About() {
       <section className="py-20 md:py-32 bg-background">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="flex flex-col lg:flex-row items-stretch gap-16 lg:gap-24">
-            
+
             {/* Large Image - object-contain so full image shows */}
             <div className="w-full lg:w-[45%] relative">
               <div className="group relative">
                 <div className="relative w-full rounded-3xl overflow-hidden shadow-2xl bg-brand-sand/20" style={{ minHeight: '600px' }}>
-                  <Image 
-                    src="/isabel.png" 
-                    alt="Isabel Gordon" 
-                    fill 
+                  <Image
+                    src="/isabel.png"
+                    alt="Isabel Gordon"
+                    fill
                     sizes="(max-width: 768px) 100vw, 45vw"
-                    className="object-cover transition-all duration-1000 group-hover:scale-[1.03]" 
+                    className="object-cover transition-all duration-1000 group-hover:scale-[1.03]"
                   />
                 </div>
                 {/* Decorative frame */}
@@ -99,7 +99,7 @@ export default function About() {
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-brand-gold/10 rounded-full blur-2xl -z-10"></div>
               </div>
             </div>
-            
+
             {/* Content */}
             <div className="w-full lg:w-[55%] flex flex-col justify-center space-y-8">
               <div>
@@ -118,7 +118,7 @@ export default function About() {
                   <p key={i} className="text-brand-emerald/80 text-base lg:text-lg font-light leading-relaxed">{paragraph}</p>
                 ))}
               </div>
-              
+
               {/* Mottos */}
               <div className="bg-brand-emerald/5 rounded-2xl p-6 md:p-8 space-y-4">
                 <h4 className="text-brand-gold font-bold tracking-[0.3em] uppercase text-[10px]">Her Mottos</h4>
@@ -139,26 +139,26 @@ export default function About() {
       <section className="py-20 md:py-32 bg-brand-emerald text-white relative overflow-hidden">
         {/* Subtle BG pattern */}
         <div className="absolute top-0 right-0 w-1/2 h-full bg-white/[0.03] -skew-x-12 translate-x-1/4"></div>
-        
+
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 relative z-10">
           <div className="flex flex-col lg:flex-row-reverse items-stretch gap-16 lg:gap-24">
-            
+
             {/* Image */}
             <div className="w-full lg:w-[45%] relative">
               <div className="group relative">
                 <div className="relative w-full rounded-3xl overflow-hidden shadow-2xl" style={{ minHeight: '550px' }}>
-                  <Image 
-                    src="/kerriann.png" 
-                    alt="Kerriann Dear" 
-                    fill 
+                  <Image
+                    src="/kerriann.png"
+                    alt="Kerriann Dear"
+                    fill
                     sizes="(max-width: 768px) 100vw, 45vw"
-                    className="object-cover transition-all duration-1000 group-hover:scale-[1.03]" 
+                    className="object-cover transition-all duration-1000 group-hover:scale-[1.03]"
                   />
                 </div>
                 <div className="absolute -inset-4 md:-inset-6 border-2 border-brand-gold/20 rounded-3xl -z-10 -translate-x-4 translate-y-4"></div>
               </div>
             </div>
-            
+
             {/* Content */}
             <div className="w-full lg:w-[55%] flex flex-col justify-center space-y-8">
               <div>
@@ -174,7 +174,7 @@ export default function About() {
                   <p key={i} className="text-brand-sand text-base lg:text-lg font-light leading-relaxed">{paragraph}</p>
                 ))}
               </div>
-              
+
               <div className="pt-4">
                 <Link href="/book" className="inline-flex items-center justify-center px-10 py-4 rounded-full text-sm font-bold tracking-[0.2em] uppercase transition-all duration-500 shadow-xl transform hover:-translate-y-1 bg-brand-gold text-brand-emerald hover:bg-white">
                   Book
@@ -192,27 +192,27 @@ export default function About() {
         <div className="absolute inset-0 z-0 opacity-[0.04]">
           <Image src="/retreat.png" alt="" fill className="object-cover" />
         </div>
-        
+
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 relative z-10">
           <div className="flex flex-col lg:flex-row items-stretch gap-16 lg:gap-24">
-            
+
             {/* Image */}
             <div className="w-full lg:w-[45%] relative">
               <div className="group relative">
                 <div className="relative w-full rounded-3xl overflow-hidden shadow-2xl bg-brand-sand/20" style={{ minHeight: '550px' }}>
-                  <Image 
-                    src="/maurice.png" 
-                    alt="Maurice McCann" 
-                    fill 
+                  <Image
+                    src="/maurice.png"
+                    alt="Maurice McCann"
+                    fill
                     sizes="(max-width: 768px) 100vw, 45vw"
-                    className="object-cover transition-all duration-1000 group-hover:scale-[1.03]" 
+                    className="object-cover transition-all duration-1000 group-hover:scale-[1.03]"
                   />
                 </div>
                 <div className="absolute -inset-4 md:-inset-6 border-2 border-brand-gold/20 rounded-3xl -z-10 translate-x-4 translate-y-4"></div>
                 <div className="absolute -top-6 -left-6 w-40 h-40 bg-brand-sage/10 rounded-full blur-3xl -z-10"></div>
               </div>
             </div>
-            
+
             {/* Content */}
             <div className="w-full lg:w-[55%] flex flex-col justify-center space-y-8">
               <div>
@@ -228,7 +228,7 @@ export default function About() {
                   <p key={i} className="text-brand-emerald/80 text-base lg:text-lg font-light leading-relaxed">{paragraph}</p>
                 ))}
               </div>
-              
+
               <div className="pt-4">
                 <Link href="/book" className="inline-flex items-center justify-center px-10 py-4 rounded-full text-sm font-bold tracking-[0.2em] uppercase transition-all duration-500 shadow-xl transform hover:-translate-y-1 bg-brand-emerald text-white hover:bg-brand-gold hover:text-brand-emerald">
                   Book
@@ -245,9 +245,9 @@ export default function About() {
         {/* Decorative elements */}
         <div className="absolute top-0 left-0 w-96 h-96 bg-brand-gold/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
         <div className="absolute bottom-0 right-0 w-80 h-80 bg-white/5 rounded-full blur-3xl translate-x-1/3 translate-y-1/3"></div>
-        
+
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 relative z-10">
-          
+
           {/* Section Header */}
           <div className="text-center mb-20 space-y-6">
             <span className="text-brand-gold font-bold tracking-[0.4em] uppercase text-xs block">Yoga Group</span>
@@ -258,7 +258,7 @@ export default function About() {
           {/* Retreat Card */}
           <div className="bg-white/[0.07] backdrop-blur-xl border border-white/10 rounded-[2rem] md:rounded-[3rem] p-6 md:p-12 lg:p-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-              
+
               {/* Retreat Image */}
               <div className="relative group">
                 <div className="relative aspect-[4/3] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl">
@@ -274,12 +274,12 @@ export default function About() {
               {/* Retreat Content */}
               <div className="space-y-8">
                 <div>
-                  <h3 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white italic leading-tight">Reset & Renew<br/>Retreat</h3>
+                  <h3 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white italic leading-tight">Reset & Renew<br />Retreat</h3>
                   <p className="mt-6 text-brand-sand/90 text-lg leading-relaxed font-light">
                     The perfect opportunity for you to step out of your busy life & spend time being nourished whilst learning and experiencing the benefits of <span className="text-white font-medium">Iyengar Yoga</span>, <span className="text-white font-medium">Food as Medicine</span> and <span className="text-white font-medium">mindfulness practices</span> at our Annual Ultimate Healing Retreat.
                   </p>
                 </div>
-                
+
                 {/* Details Cards */}
                 <div className="space-y-4">
                   {[
