@@ -26,18 +26,21 @@ const Header = () => {
   ];
 
   // Logic to determine text color based on page and scroll state
-  // On Home page (/), we want white text at top, emerald when scrolled.
-  // On other pages, we want emerald text even at top because the backgrounds are light.
+  // Pages with dark hero backgrounds need white text at top, emerald when scrolled.
+  // Other pages always get emerald text.
   const isHomePage = pathname === '/';
-  const textColorClass = isHomePage 
+  const isAboutPage = pathname === '/about';
+  const hasDarkHero = isHomePage || isAboutPage;
+
+  const textColorClass = hasDarkHero 
     ? (scrolled ? 'text-brand-emerald' : 'text-white') 
     : 'text-brand-emerald';
   
-  const subtitleColorClass = isHomePage 
+  const subtitleColorClass = hasDarkHero 
     ? (scrolled ? 'text-brand-sage' : 'text-brand-sand') 
     : 'text-brand-sage';
 
-  const logoBorderClass = isHomePage 
+  const logoBorderClass = hasDarkHero 
     ? (scrolled ? 'border-brand-gold/20' : 'border-white/30') 
     : 'border-brand-gold/20';
 

@@ -62,17 +62,22 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
             {[
-              { id: 2, title: "Yoga Classes", desc: "Bespoke Iyengar and Yin sessions focused on alignment.", link: "/yoga" },
-              { id: 3, title: "Exercise Physiology", desc: "Scientific approach to movement and rehabilitation.", link: "/exercise-physiology" },
-              { id: 4, title: "Acupuncture & Cupping", desc: "Ancient healing for modern nervous system stress.", link: "/acupuncture" },
-              { id: 5, title: "Live-in Retreats", desc: "Immersive healing at our canal-side sanctuary.", link: "/retreats" }
+              { id: 2, title: "Yoga Classes", desc: "Bespoke Iyengar and Yin sessions focused on alignment.", link: "/yoga", image: "/2.avif" },
+              { id: 3, title: "Exercise Physiology", desc: "Scientific approach to movement and rehabilitation.", link: "/exercise-physiology", image: "/3.avif" },
+              { id: 4, title: "Acupuncture & Cupping", desc: "Ancient healing for modern nervous system stress.", link: "/acupuncture", image: "/acupuncture_new.png" },
+              { id: 5, title: "Live-in Retreats", desc: "Immersive healing at our canal-side sanctuary.", link: "/retreats", image: "/retreat.png" }
             ].map((service) => (
               <div key={service.id} className="group flex flex-col pt-12 border-t border-brand-sand transition-all duration-300 hover:border-brand-gold">
                 <span className="text-brand-gold/40 text-4xl font-serif mb-6 group-hover:text-brand-gold transition-colors">0{service.id - 1}</span>
                 <h3 className="text-2xl font-serif font-bold text-brand-emerald mb-4 group-hover:translate-x-2 transition-transform duration-300">{service.title}</h3>
                 <p className="text-brand-emerald/70 mb-8 font-light leading-relaxed">{service.desc}</p>
-                <div className="mt-auto relative h-48 rounded-2xl overflow-hidden mb-6">
-                   <Image src={`/${service.id}.avif`} alt={service.title} fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105" />
+                <div className="mt-auto relative h-64 rounded-2xl overflow-hidden mb-6 bg-brand-sand/10">
+                   <Image 
+                    src={service.image} 
+                    alt={service.title} 
+                    fill 
+                    className="object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105" 
+                   />
                 </div>
                 <Link href={service.link} className="inline-flex items-center gap-3 text-xs font-bold tracking-widest uppercase text-brand-emerald group-hover:text-brand-gold transition-colors">
                   Learn More <span className="w-8 h-[1px] bg-brand-emerald group-hover:bg-brand-gold transition-all group-hover:w-12"></span>
