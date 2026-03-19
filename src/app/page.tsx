@@ -133,10 +133,9 @@ export default function Home() {
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
             <div className="relative">
-              <div className="relative z-10 rounded-2xl overflow-hidden border-[12px] border-white/5 shadow-3xl">
+              <div className="aspect-[4/5] relative z-10 rounded-2xl overflow-hidden border-[12px] border-white/5 shadow-3xl">
               <Image src="/Gemini_Generated.png" alt="Isabel Gordon" fill className="object-cover" />
               </div>
-              <div className="absolute top-1/2 -right-12 w-64 h-64 bg-brand-gold/10 rounded-full blur-3xl -z-10 animate-pulse"></div>
             </div>
 
             <div className="space-y-10">
