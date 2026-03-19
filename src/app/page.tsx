@@ -134,14 +134,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
             <div className="relative">
               <div className="relative z-10 rounded-2xl overflow-hidden border-[12px] border-white/5 shadow-3xl">
-                <video 
-                  src="/WhatsApp Video 2026-03-16 at 9.23.16 PM.mp4" 
-                  autoPlay 
-                  muted 
-                  loop 
-                  playsInline 
-                  className="object-cover w-full h-[700px]"
-                />
+              <Image src="/Gemini_Generated.png" alt="Isabel Gordon" fill className="object-cover" />
               </div>
               <div className="absolute top-1/2 -right-12 w-64 h-64 bg-brand-gold/10 rounded-full blur-3xl -z-10 animate-pulse"></div>
             </div>
@@ -173,7 +166,14 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row-reverse items-center gap-24">
             <div className="w-full lg:w-1/2 relative">
               <div className="aspect-[4/5] relative rounded-[4rem] overflow-hidden shadow-2xl skew-y-3 transition-transform hover:skew-y-0 duration-700">
-                <Image src="/gordon.webp" alt="Isabel Gordon" fill className="object-cover" />
+                <video 
+                  src="/WhatsApp Video 2026-03-16 at 9.23.16 PM.mp4" 
+                  autoPlay 
+                  muted 
+                  loop 
+                  playsInline 
+                  className="object-cover w-full h-[700px]"
+                />
               </div>
               <div className="absolute -bottom-10 -left-10 glass px-8 py-6 rounded-2xl shadow-xl z-10 border border-brand-sand">
                 <p className="text-brand-emerald font-serif italic text-lg leading-tight">Expertise in both<br /><span className="font-bold font-sans not-italic text-brand-gold uppercase tracking-tighter">Modern Science & Eastern Healing</span></p>
@@ -227,7 +227,7 @@ export default function Home() {
       <section className="py-24">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="relative h-[600px] rounded-[3rem] overflow-hidden group shadow-2xl">
-            <Image src="/8.avif" alt="Channel location" fill className="object-cover transition-transform duration-[3s] group-hover:scale-110" />
+            <Image src="/bamner_3.png" alt="Channel location" fill className="object-cover transition-transform duration-[3s] group-hover:scale-110" />
             <div className="absolute inset-0 bg-brand-emerald/20 hover:bg-transparent transition-all duration-1000"></div>
             <div className="absolute bottom-12 left-12 glass p-12 max-w-md border-white/40 shadow-2xl">
               <h3 className="text-3xl font-serif font-bold text-brand-emerald mb-4 italic">Cabarita Beach Studio</h3>
